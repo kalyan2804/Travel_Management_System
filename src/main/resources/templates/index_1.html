@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Management System</title>
+</head>
+<style>
+    body{
+    background-image: url('Images/backgroundforspl.gif');
+    background-size:cover;
+    padding:0;
+    margin:0;
+}
+</style>
+<body background="ima">
+<div style="border: 15px solid rgb(121, 189, 209); padding: 25px;margin: 15px; text-align: center;">
+    <h1>Travel Management System</h1>
+</div>
+
+<div style="text-align: center;"><h2>New Users <a th:href="@{/registerUser}">click here</a> to register</h2></div>
+<div style="text-align: center;"><h2>Existing Users <a th:href="@{/loginUser}">click here</a> to login</h2></div>
+</div>
+</body>
+</html>

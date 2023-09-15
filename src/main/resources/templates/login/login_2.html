@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<style>
+button {
+  background-color: #5881b8;
+  color: white;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width:250px;
+  text-align: center;
+  border-radius: 10px;
+}
+.container{
+display: grid;
+align-content: center;
+padding-left: 500px;
+padding-right: 500px;
+border-radius: 10px;
+}
+.login{
+    background-color:rgb(206, 230, 240);
+    border-radius: 10px;
+    text-align: center;
+}
+.heading{
+    display: grid;
+    background-color:#5881b8;;
+    padding-top: 20px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    padding-left: 500px;
+padding-right: 500px;
+}
+
+</style>
+<body>
+<pre>
+    <h2 th:text="${msg}"></h2>
+    <h1 class ="heading" style="font-size: large;">LOGIN</h1>
+<div class="container">
+<form action="login-user" method="post">
+    <div class="login">
+
+
+        <label for="uname" style="width:250px;font-size:20px"><b>USERNAME</b></label>
+        <input type="text" placeholder="Enter Username" name="email" required style = "text-align: center; margin-top: 10px; width:250px;">
+
+        <label for="psw" style = "width:250px;font-size:20px;border:2px"><b>PASSWORD</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required style = "text-align: center;margin-top: 10px; width:250px;">
+
+        <button type="submit">Login</button>
+    </div>
+</form>
+</div>
+</pre>
+
+</body>
+</html>
